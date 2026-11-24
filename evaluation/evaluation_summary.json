@@ -1,0 +1,44 @@
+{
+  "DQN Agent": {
+    "agent": "DQN Agent",
+    "episodes": 100,
+    "avg_score": 29.58,
+    "median_score": 30.0,
+    "std_score": 10.84,
+    "min_score": 6,
+    "max_score": 60,
+    "avg_reward": 320.247,
+    "avg_steps": 451.13,
+    "success_rate": 91.0,
+    "avg_duration_sec": 0.0609,
+    "total_eval_time_sec": 6.12
+  },
+  "Random Agent": {
+    "agent": "Random Agent",
+    "episodes": 100,
+    "avg_score": 0.11,
+    "median_score": 0.0,
+    "std_score": 0.314,
+    "min_score": 0,
+    "max_score": 1,
+    "avg_reward": -11.416,
+    "avg_steps": 61.28,
+    "success_rate": 0.0,
+    "avg_duration_sec": 0.0006,
+    "total_eval_time_sec": 0.09
+  },
+  "Heuristic (Rule-based)": {
+    "agent": "Heuristic (Rule-based)",
+    "episodes": 100,
+    "avg_score": 28.22,
+    "median_score": 26.5,
+    "std_score": 11.118,
+    "min_score": 5,
+    "max_score": 57,
+    "avg_reward": 305.053,
+    "avg_steps": 432.2,
+    "success_rate": 92.0,
+    "avg_duration_sec": 0.0133,
+    "total_eval_time_sec": 1.35
+  }
+}

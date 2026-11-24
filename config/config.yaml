@@ -1,0 +1,45 @@
+# Configuration for DQN Snake Agent
+
+environment:
+  grid_width: 20
+  grid_height: 20
+  cell_size: 20
+  fps: 15
+  max_idle_steps_multiplier: 100 # max_idle_steps = len(snake) * multiplier
+  seed: 42
+
+rewards:
+  food_reward: 10.0
+  collision_penalty: -10.0
+  closer_reward: 0.1
+  farther_penalty: -0.15
+  step_penalty: -0.01
+
+agent:
+  state_dim: 11
+  action_dim: 3
+  hidden_dims: [256, 256]
+  learning_rate: 0.0005
+  gamma: 0.99
+  epsilon_start: 1.0
+  epsilon_min: 0.01
+  epsilon_decay: 0.995
+  buffer_capacity: 100000
+  batch_size: 64
+  target_update_freq: 500 # updates steps
+  grad_clip: 1.0
+
+training:
+  episodes: 600
+  smoke_test_episodes: 15
+  eval_interval: 50
+  checkpoint_interval: 100
+  save_dir: "models"
+  log_dir: "results/metrics"
+  seed: 42
+
+evaluation:
+  episodes: 100
+  seeds: [42, 101, 202, 303, 404]
+  success_score_threshold: 15
+  save_dir: "results/evaluation"
